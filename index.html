@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><goit-markup-hw-05></goit-markup-hw-05></title>
+    <title>goit-markup-hw-06</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -59,19 +59,128 @@
             </li>
           </ul>
         </address>
-        <button type="menu" class="burger-menu-button">
-          <svg class="icon icon-heroicons-solid_menu" width="24" height="24">
+        <button type="menu" class="mobmenu-opn-btn">
+          <svg class="icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
         </button>
       </div>
-      <!-- <div class="mobile-menu">
-        <button type="menu" class="burger-menu-button">
-          <svg class="icon icon-heroicons-solid_menu" width="24" height="24">
-            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+      <!-- ===================================== -->
+      <!-- ===================================== -->
+      <div class="mob-menu-modal">
+        <div>
+          <button class="mobmenu-cls-btn" type="button">
+          <svg class="modal-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-      </div> -->
+        <nav class="nav-mob-header">
+            <ul class="mob-nav-menu-list">
+              <li class="mob-nav-menu-item">
+                <a
+                  href="./index.html"
+                  class="mob-nav-menu-link-current"
+                  target="_blank"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-nav-menu-item">
+                <a href="" class="mob-nav-menu-link" target="_blank"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-nav-menu-item">
+                <a href="" class="mob-nav-menu-link" target="_blank"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <address class="mob-address">
+          <ul class="mob-address-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="mob-address-item"
+                >info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="mob-address-item"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        </div>
+        <div class="mob-social">
+                <ul class="mob-social-list">
+                  <li class="mob-social-item">
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      class="link"
+                    >
+                      <svg
+                        class="mob-icon"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                      >
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-item">
+                    <a
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                      class="link"
+                    >
+                      <svg
+                        class="mob-icon"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                      >
+                        <use href="/images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-item">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="link"
+                    >
+                      <svg
+                        class="mob-icon"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                      >
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-item">
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="link"
+                    >
+                      <svg
+                        class="mob-icon"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                      >
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -144,7 +253,8 @@
           <ul class="ourteam-list">
             <li class="ourteam-item">
               <img
-                src="./images/markguerrero.jpg"
+              srcset="./images/ourteam/markguerrero@1x.jpg 1x, ./images/ourteam/markguerrero@2x.jpg 2x"
+                src="./images/ourteam/markguerrero@1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -223,7 +333,8 @@
             </li>
             <li class="ourteam-item">
               <img
-                src="./images/tomford.jpg"
+              srcset="./images/ourteam/tomford@1x.jpg 1x, ./images/ourteam/tomford@2x.jpg 2x"
+                src="./images/ourteam/tomford@1x.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -302,7 +413,8 @@
             </li>
             <li class="ourteam-item">
               <img
-                src="./images/camilagarcia.jpg"
+              srcset="./images/ourteam/camilagarcia@1x.jpg 1x, ./images/ourteam/camilagarcia@2x.jpg 2x"
+                src="./images/ourteam/camilagarcia@1x.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -381,7 +493,8 @@
             </li>
             <li class="ourteam-item">
               <img
-                src="./images/danielwilson.jpg"
+              srcset="./images/ourteam/danielwilson@1x.jpg 1x, ./images/ourteam/danielwilson@1x.jpg 2x"
+                src="./images/ourteam/danielwilson@1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -468,7 +581,8 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
-                  src="./images/bankingap.jpg"
+                srcset="./images/portfolio/bankingap/bankingap-desktop@1x.jpg 1x, ./images/portfolio/bankingap/bankingap-desktop@2x.jpg 2x"
+                  src="./images/portfolio/bankingap/bankingap-desktop@1x.jpg"
                   alt="bankingappp"
                   width="360"
                   height="300"
@@ -487,7 +601,8 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
-                  src="./images/cashlesspaymentt.jpg"
+                srcset="./images/portfolio/cashlesspaymentt/cashlesspaymentt-desktop@2x.jpg 2x, ./images/portfolio/cashlesspaymentt/cashlesspaymentt-desktop@1x.jpg 1x"
+                  src="./images/portfolio/cashlesspaymentt/cashlesspaymentt-desktop@1x.jpg"
                   alt="cashlesspayment"
                   width="360"
                   height="300"
@@ -506,7 +621,8 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
-                  src="./images/meditaionappp.jpg"
+                srcset="./images/portfolio/meditaionappp/meditaionappp-desktop@1x.jpg 1x, ./images/portfolio/meditaionappp/meditaionappp-desktop@2x.jpg 2x"
+                  src="./images/portfolio/meditaionappp/meditaionappp-desktop@1x.jpg"
                   alt="meditaionapp"
                   width="360"
                   height="300"
@@ -525,7 +641,8 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
-                  src="./images/taxiservicee.jpg"
+                srcset="./images/portfolio/taxiservicee/taxiservicee-desktop@1x.jpg 1x, ./images/portfolio/taxiservicee/taxiservicee-desktop@2x.jpg 2x"
+                  src="./images/portfolio/taxiservicee/taxiservicee-desktop@1x.jpg"
                   alt="taxiservice"
                   width="360"
                   height="300"
@@ -544,7 +661,8 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
-                  src="./images/screenillustrationss.jpg"
+                srcset="./images/portfolio/screenillustrationss/screenillustrationss-desktop@1x.jpg 1x, ./images/portfolio/screenillustrationss/screenillustrationss-desktop@2x.jpg 2x"
+                  src="./images/portfolio/screenillustrationss/screenillustrationss-desktop@1x.jpg"
                   alt="screenillustrations"
                   width="360"
                   height="300"
@@ -563,7 +681,8 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
-                  src="./images/onlinecoursess.jpg"
+                srcset="./images/portfolio/onlinecoursess/onlinecoursess-desktop@1x.jpg 1x, ./images/portfolio/onlinecoursess/onlinecoursess-desktop@2x.jpg 2x"
+                  src="./images/portfolio/onlinecoursess/onlinecoursess-desktop@1x.jpg"
                   alt="onlinecourses"
                   width="360"
                   height="300"

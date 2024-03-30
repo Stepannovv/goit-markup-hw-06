@@ -150,10 +150,100 @@ ol {
   text-decoration: none;
   color: #404bbf;
 }
-/* ========MENU BUTTON============= */
-.mobile-menu {
+/* ============ */
+.mobmenu-opn-btn {
+  background-color: transparent;
+  border: none;
+}
+/* ============= */
+/** =========MOB-MENU============= **/
+.mob-menu-modal {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100%;
+  padding: 24px 24px 40px 16px;
   display: flex;
-  align-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 1;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mobmenu-cls-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin-left: auto;
+  margin-bottom: 24px;
+  border: none;
+}
+.modal-icon {
+}
+.nav-mob-header {
+}
+.mob-nav-menu-list {
+  margin-bottom: 50px;
+}
+.mob-nav-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-nav-menu-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-nav-menu-link-current {
+  color: #404bbf;
+}
+.mob-nav-menu-link:focus {
+  color: #404bbf;
+}
+.mob-address {
+}
+.mob-address-list {
+  margin-bottom: 48px;
+}
+.mob-address-item {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-address-item:focus {
+  color: #404bbf;
+}
+.mob-social {
+}
+.mob-social-list {
+  display: flex;
+  gap: 40px;
+}
+.mob-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-icon {
 }
 /** ===============================**/
 /** ===========MAIN================**/
@@ -164,7 +254,7 @@ ol {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero/people-office-desktop@1x.jpg);
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
@@ -173,6 +263,17 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-desktop@2x.jpg);
+  }
 }
 
 .hero-slogan {
