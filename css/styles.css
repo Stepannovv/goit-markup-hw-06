@@ -8,10 +8,37 @@ h6,
 p {
   margin: 0;
 }
+.body {
+  width: 320px;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768) {
+  .body {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 1158) {
+  .body {
+    width: 1158px;
+  }
+}
 .container {
-  width: 1158px;
+  /* width: 1440px; */
+  width: 320px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1158) {
+  .container {
+    width: 100%;
+  }
 }
 
 img {
@@ -20,11 +47,6 @@ img {
   height: auto;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
-}
 a {
   text-decoration: none;
 }
@@ -70,8 +92,18 @@ ol {
   color: #2e2f42;
 }
 .header-nav-menu-list {
-  display: flex;
-  gap: 40px;
+  display: none;
+}
+@media screen and (max-width: 768) {
+  .header-nav-menu-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 1158) {
+  .header-nav-menu-list {
+    display: flex;
+    gap: 40px;
+  }
 }
 .header-nav-menu-link {
   display: block;
@@ -154,6 +186,8 @@ ol {
 .mobmenu-opn-btn {
   background-color: transparent;
   border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin: 16px 16px;
 }
 /* ============= */
 /** =========MOB-MENU============= **/
@@ -172,6 +206,7 @@ ol {
   pointer-events: none;
 }
 .mobmenu-cls-btn {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,7 +290,7 @@ ol {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/people-office-desktop@1x.jpg);
-  max-width: 1440px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-top: 188px;
@@ -952,3 +987,17 @@ ol {
   border: none;
   fill: #f4f4fd;
 }
+/* @media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0;
+  }
+  .header-nav-menu-list,
+  .header-address {
+    display: none;
+  }
+  .mobmenu-opn-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+} */
