@@ -59,7 +59,7 @@
             </li>
           </ul>
         </address>
-        <button type="menu" class="mobmenu-opn-btn">
+        <button type="menu" class="mobmenu-opn-btn" data-menu-open>
           <svg class="icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
@@ -67,9 +67,9 @@
       </div>
       <!-- ===================================== -->
       <!-- ===================================== -->
-      <div class="mob-menu-modal is-open">
+      <div class="mob-menu-modal" data-menu>
         <div class="mobile-menu">
-          <button class="mobmenu-cls-btn" type="button">
+          <button class="mobmenu-cls-btn" type="button" data-menu-close>
           <svg class="modal-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -189,7 +189,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-slogan">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>Order Service</button>
         </div>
       </section>
       <section class="aboutus">
@@ -831,9 +831,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="modal-exit" type="button">
+        <button class="modal-exit" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
@@ -917,5 +917,9 @@
         </form>
       </div>
     </div>
+    <!-- ====== -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- ====== -->
   </body>
 </html>
